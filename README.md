@@ -15,7 +15,9 @@
 ### 前端技术栈
 
 1.HTML
+
 2.CSS
+
 3.JavaScript
 
 ## 项目效果图
@@ -27,14 +29,25 @@
 
 ## 主要功能
 
-题目搜索,分页显示,选项切割(实现每个选项换行显示),字符串过滤,访问日志记录
+1.题目搜索
+
+2.分页显示
+
+3.选项切割(实现每个选项换行显示)
+
+4.字符串过滤
+
+5.访问日志记录
 
 ## 本地测试方法
 
 前置要求:已经安装Java,MySQL
 1.修改application.properties中的mysql配置
+
 2.在MySQL中导入import.sql
+
 3.打开IDEA并运行项目
+
 4.访问localhost:80
 
 ## Linux服务器部署方法
@@ -42,7 +55,11 @@
 前置要求:Linux上已经安装Java,MySQL
 
 1.修改application.properties中的mysql配置
+
 2.在MySQL中导入import.sql
+
 3.打包,生成文件SearchQuestion-0.0.1-SNAPSHOT.jar
+
 4.在Linux上执行nohup java -jar xuexiaoyi-0.0.1.jar
+
 5.访问网站(默认端口80)
