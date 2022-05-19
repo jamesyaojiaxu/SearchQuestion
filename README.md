@@ -18,9 +18,8 @@
 
 ## 项目效果图
 
-![f9451eecc1c62389dd1c5a71fc416ba7.png](https://raw.githubusercontent.com/zxrdtcfvyguh/-SpringBoot-/main/image/1.png)
-![d5f2ffdebdc7b9feb14c9482606ffadd.png](https://raw.githubusercontent.com/zxrdtcfvyguh/-SpringBoot-/main/image/2.png)
-![38fca9ea534e6751de0598fe14fd3883.png](https://raw.githubusercontent.com/zxrdtcfvyguh/-SpringBoot-/main/image/3.png)
+![f9451eecc1c62389dd1c5a71fc416ba7.png](./image/1.png)
+<img src="image/2.jpeg" title="" alt="d5f2ffdebdc7b9feb14c9482606ffadd.png" width="691">
 网站体验地址:http://81.70.93.5(因题库较小,请搜题时输入"计算机")
 
 ## 主要功能
@@ -29,7 +28,11 @@
 
 ## Linux服务器部署方法
 
+前置要求:Linux上已经安装Java,MySQL
+
 1.修改application.properties中的mysql配置
-2.打包,生成文件SearchQuestion-0.0.1-SNAPSHOT.jar
-3.在Linux上执行nohup java -jar xuexiaoyi-0.0.1.jar
-4.访问网站(默认端口80)
+
+2.在MySQL中导入import.sql
+3.打包,生成文件SearchQuestion-0.0.1-SNAPSHOT.jar
+4.在Linux上执行nohup java -jar xuexiaoyi-0.0.1.jar
+5.访问网站(默认端口80)
