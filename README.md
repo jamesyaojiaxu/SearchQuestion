@@ -19,8 +19,8 @@
 ## 项目效果图
 
 ![f9451eecc1c62389dd1c5a71fc416ba7.png](https://raw.githubusercontent.com/zxrdtcfvyguh/-SpringBoot-/main/image/1.png)
-![d5f2ffdebdc7b9feb14c9482606ffadd.png](C:\Users\Administrator\Desktop\javaCode\SearchQuestion\image\d5f2ffdebdc7b9feb14c9482606ffadd.png)
-![38fca9ea534e6751de0598fe14fd3883.png](C:\Users\Administrator\Desktop\javaCode\SearchQuestion\image\38fca9ea534e6751de0598fe14fd3883.png)
+![d5f2ffdebdc7b9feb14c9482606ffadd.png](https://raw.githubusercontent.com/zxrdtcfvyguh/-SpringBoot-/main/image/2.png)
+![38fca9ea534e6751de0598fe14fd3883.png](https://raw.githubusercontent.com/zxrdtcfvyguh/-SpringBoot-/main/image/3.png)
 网站体验地址:http://81.70.93.5(因题库较小,请搜题时输入"计算机")
 
 ## 主要功能
