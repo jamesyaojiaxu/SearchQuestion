@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小狗嗅题</title>
+    <link rel="stylesheet" th:href="@{css/index.css}">
+</head>
+<body>
+<div class="mainbody">
+    <img class="logo" th:src="@{dog.png}">
+    <form action="/search" method="get">
+        <input type="search" class="searchbox" name="query" required><input type="image" class="searchbutton"
+                                                                            th:src="@{search.png}">
+        <input type="hidden" name="currentPage" value="1">
+    </form>
+</div>

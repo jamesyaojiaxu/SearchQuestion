@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>小狗嗅题</title>
+    <link rel="stylesheet" th:href="@{css/result.css}">
+</head>
+<body>
+<form action="/search" method="get">
+    <img th:src="@{dog.png}" class="logo">
+    <input type="search" name="query" th:value="${query}" class="searchbox" required><input type="image" class="searchbutton" th:src="@{search.png}">
+    <input type="hidden" name="currentPage" value="1">
+</form>
+<div class="resultlength" th:text="'为您找到相关结果'+${total}+'个'"></div><br>
+<div class="answers" th:each="answer:${answers}">
+    <div>
+        <span class="title" th:text="${answer.getTitle()}"></span>
+        </br>
+    </div>
+    <div th:each="choice:${answer.getOptions()}">
+        <span th:text="${choice}"></span>
+    </div>
+    <div class="solutionframe">
+        <img class="answericon" th:src="@{answer_icon.png}">
+        <span class="solutionprompt">参考答案</span>
+        <br>
+        <div class="solution" th:text="${answer.getSolution()}"></div>
+    </div>
+    <br>
+</div>
+<div>
+    <table class="pagnationtable">
+        <tr>
+            <td th:each="element:${paginationlist}">
+                <a th:id="${element}" th:href="'/search?query='+${query}+'&amp;currentPage='+${element}" th:text="${element}"></a>
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript" th:inline="javascript">
+    var classname=[[${currentpage}]];
+    document.getElementById(classname).style.color="rgb(32,33,36)";
+</script>
+</body>
+</html>
