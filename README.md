@@ -39,7 +39,7 @@
 
 5.访问日志记录
 
-## 本地测试方法
+## 本地部署方法
 
 前置要求:已经安装Java,MySQL5.6(其它版本需修改依赖,8.0及以上需同时修改application.properties中的class-name)
 
